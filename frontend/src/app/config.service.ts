@@ -14,4 +14,8 @@ export class ConfigService {
   postLoginAesCbc(params) {
     return this.http.post('http://localhost:8080/login-aes-cbc', params);
   }
+
+  postLoginRsa(params) {
+    return this.http.post('http://localhost:8080/login-rsa', params);
+  }
 }
